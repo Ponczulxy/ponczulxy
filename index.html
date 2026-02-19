@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia | Ponczulxy_</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+
+    <div id="intro-overlay" class="fixed inset-0 z-[2000] bg-black flex items-center justify-center transition-all duration-1000">
+        <div class="text-center">
+            <h2 class="text-white text-3xl font-black tracking-[0.8em] uppercase animate-pulse">Ponczulxy_</h2>
+            <div class="mt-4 h-[1px] w-0 bg-white mx-auto animate-[load_2s_ease-in-out_forwards]"></div>
+        </div>
+    </div>
+
+    <canvas id="particle-canvas"></canvas>
+    <div id="progress-bar"></div>
+
+    <section class="h-screen flex items-center justify-center p-6 relative overflow-hidden" id="hero">
+        <div class="text-center z-10" id="hero-content">
+            <h1 class="text-[14vw] font-black tracking-tighter leading-none uppercase select-none">Ponczulxy_</h1>
+            <p id="scroll-hint" class="text-sm font-light tracking-[0.5em] uppercase text-gray-500">
+                Przewiń, by zobaczyć więcej
+            </p>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+    </section>
+
+    <section class="min-h-[70vh] flex items-center justify-center p-6 md:p-20 relative z-20">
+        <div class="reveal max-w-5xl">
+            <h2 class="text-sm uppercase tracking-widest text-blue-500 font-bold mb-6">Biografia</h2>
+            <p class="text-3xl md:text-5xl font-medium leading-tight tracking-tight">
+                Siema jestem ponczek ; ) <span class="text-blue-500">Zwykły ziutek co sobie gra w gierki</span>, lubi pisać strony www, robić serwery minecraft oraz boty discord.
+                Jeżeli chcesz bota discord lub stronę www, pisz na DM.  
+                <span class="text-white border-b-2 border-white"> Miłego oglądania mojej wspaniałej strony!</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="min-h-screen p-6 md:p-20 relative z-20">
+        <div class="reveal mb-32">
+            <h2 class="text-sm uppercase tracking-widest text-blue-500 font-bold mb-4">PROJEKTY</h2>
+            <h3 class="text-6xl font-bold tracking-tight mb-8">Projekty w których biorę udział.</h3>
+            
+            <div class="max-w-3xl mb-16">
+                <p class="text-2xl text-gray-400 leading-relaxed italic">
+                    Aktualnie jestem administratorem <span class="text-white font-semibold">"UNIMC"</span>. Jest to projekt serwera minecraft na którym codziennie grają setki graczy, a na discordzie jest ponad 30 tysięcy osób.
+                </p>
+            </div>
+
+            <div class="project-item reveal group">
+                <div class="project-img bg-[#0a0a0a] border border-white/10 overflow-hidden rounded-[40px] aspect-[21/9] relative">
+                    <img src="grafiki/unimclogo.png" alt="Unimc.pl" class="w-full h-full object-cover opacity-30 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <span class="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter drop-shadow-2xl">Unimc</span>
+                    </div>
+                    <a href="https://discord.gg/24zRXrpd" target="_blank" class="absolute bottom-10 right-10 bg-white text-black px-8 py-4 rounded-full font-black text-sm uppercase opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 hover:scale-110 pointer-events-auto">
+                        Dołącz na discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-10"></div>
+
+    <section class="min-h-screen p-6 md:p-20 relative z-20">
+        <div class="reveal">
+            <h2 class="text-sm uppercase tracking-widest text-blue-500 font-bold mb-4">Coś tam pasje</h2>
+            <h3 class="text-6xl font-bold tracking-tight mb-10">Luz & Pasje.</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card reveal p-8">
+                    <h5 class="font-bold text-xl mb-3">Minecraft</h5>
+                    <p class="text-gray-500 text-sm italic">Pluginy, stawianie projektów, design, po prostu super gra.</p>
+                </div>
+                <div class="glass-card reveal p-8">
+                    <h5 class="font-bold text-xl mb-3">Frontend</h5>
+                    <p class="text-gray-500 text-sm italic">HTML CSS JS, po prostu bajka ; )</p>
+                </div>
+                <div class="glass-card reveal p-8">
+                    <h5 class="font-bold text-xl mb-3">Muzyka</h5>
+                    <p class="text-gray-500 text-sm italic">kamil, sentino, vkie, miód dla uszuuuuu.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-48 rounded-3xl reveal border border-white/5 overflow-hidden group">
+                    <img src="grafiki/Ponczulxy_.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" alt="Hobby 1">
+                </div>
+                <div class="h-48 rounded-3xl reveal border border-white/5 overflow-hidden group">
+                    <img src="grafiki/UnimcStrona.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" alt="Hobby 2">
+                </div>
+                <div class="h-48 rounded-3xl reveal border border-white/5 overflow-hidden group">
+                    <img src="grafiki/sentino.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" alt="Hobby 3">
+                </div>
+                <div class="h-48 rounded-3xl reveal border border-white/5 overflow-hidden group">
+                    <img src="grafiki/bbc.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" alt="Hobby 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-20 text-center text-gray-700 text-[10px] tracking-[0.4em] uppercase relative z-20">
+        &copy; 2026 Copyright | Ponczulxy_
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
