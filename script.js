@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- 1. INTRO OVERLAY ---
+   
     const intro = document.getElementById('intro-overlay');
     document.body.style.overflow = 'hidden';
 
@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 2800);
 
-    // --- 2. SPOTLIGHT (Mouse position) ---
+    
     window.addEventListener('mousemove', (e) => {
         document.body.style.setProperty('--mouse-x', `${e.clientX}px`);
         document.body.style.setProperty('--mouse-y', `${e.clientY}px`);
     });
 
-    // --- 3. PARTICLE ENGINE ---
+    
     const canvas = document.getElementById('particle-canvas');
     if (canvas) {
         const ctx = canvas.getContext('2d');
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         animateParticles();
     }
 
-    // --- 4. REVEAL ON SCROLL ---
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) entry.target.classList.add('active');
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // --- 5. PROGRESS & HERO EFFECTS ---
+    
     const progressBar = document.getElementById('progress-bar');
     const heroContent = document.getElementById('hero-content');
     const heroTitle = document.querySelector('#hero-content h1');
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
 
-    // --- 6. BACKGROUND DARKEN HOVER ---
+    
     const mainProject = document.querySelector('.project-item');
     if (mainProject) {
         mainProject.addEventListener('mouseenter', () => {
@@ -140,4 +140,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     console.log("Noir Engine v3.0 (Spotlight + Particles + Intro): Connected");
+
 });
