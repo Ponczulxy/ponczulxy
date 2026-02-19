@@ -21,7 +21,7 @@ body {
     color: white;
 }
 
-/* SPOTLIGHT EFFECT - BIAŁE CIENIOWANIE */
+
 body::before {
     content: "";
     position: fixed;
@@ -38,7 +38,7 @@ body::before {
     pointer-events: none;
 }
 
-/* INTRO OVERLAY */
+
 #intro-overlay.intro-hidden {
     opacity: 0;
     visibility: hidden;
@@ -150,4 +150,5 @@ section, footer {
     .text-6xl { font-size: 3rem; }
     .text-3xl { font-size: 1.5rem; }
     .project-img { aspect-ratio: 16/10; }
+
 }
